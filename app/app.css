@@ -15,5 +15,5 @@ h1, h2, h3, p, span, th, td, dt, dd, button {
 }
 
 .btn {
-  @apply rounded border px-2 py-1;
+  @apply rounded border px-2 py-1 hover:cursor-pointer disabled:hover:cursor-not-allowed;
 }

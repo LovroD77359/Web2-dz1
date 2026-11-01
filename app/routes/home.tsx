@@ -73,13 +73,13 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <div className="flex items-center gap-3">
             <span>{user.name}</span>
             <Form method="post" action="/logout" reloadDocument>
-              <button type="submit" className="rounded border px-3 py-1 hover:bg-gray-800">
+              <button type="submit" className="rounded border px-3 py-1 hover:bg-gray-800 hover:cursor-pointer">
                 Log out
               </button>
             </Form>
           </div>
         ) : (
-          <a href="/login" className="rounded bg-blue-600 px-3 py-1 text-white hover:bg-blue-700">
+          <a href="/login" className="rounded bg-blue-600 px-3 py-1 text-white hover:bg-blue-700 hover:cursor-pointer">
             Log in
           </a>
         )}
