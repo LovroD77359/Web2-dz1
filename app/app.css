@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body {
+  @apply bg-gray-950;
+}
+
+h1, h2, h3, p, span, th, td, dt, dd, button {
+  @apply text-white
+}
+
+.btn {
+  @apply rounded border px-2 py-1;
+}
